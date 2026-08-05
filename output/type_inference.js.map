@@ -1,1 +1,1 @@
-{"version":3,"file":"type_inference.js","sourceRoot":"","sources":["type_inference.ts"],"names":[],"mappings":";AAAA,MAAM,SAAS,GAAG,YAAY,CAAC;AAE/B,OAAO,CAAC,GAAG,CAAC,SAAS,CAAC,WAAW,EAAE,CAAC,CAAC"}
+{"version":3,"file":"type_inference.js","sourceRoot":"","sources":["../scripts/type_inference.ts"],"names":[],"mappings":";AAAA,MAAM,SAAS,GAAG,YAAY,CAAC;AAE/B,OAAO,CAAC,GAAG,CAAC,SAAS,CAAC,WAAW,EAAE,CAAC,CAAC"}
