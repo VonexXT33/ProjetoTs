@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "rootDir": "scripts",
+        "outDir": "./output",
+        "sourceMap": true,
+        "allowJs": true,
+        "lib": ["DOM","ESNext"],
+        "noImplicitAny": true,
+        "removeComments": true,
+        //advanced options  
+        "skipLibCheck": false,
+        "forceConsistentCasingInFileNames": true,
+     }   
+    
+}
