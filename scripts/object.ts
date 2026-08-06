@@ -4,13 +4,13 @@ let configuracaoServidor: object = {
     senha: '654321'
 }
 
-console.log(configuracaoServidor);
+// console.log(configuracaoServidor);
 
 
-// configuracaoServidor = {
-//     servidor: 'Amazon Web Services',
-//     ip: '192.168.1.1',
-//     senha: '123456'
-// }
+ configuracaoServidor = {
+    servidor: 'Amazon Web Services',
+    ip: '192.168.1.1',
+    senha: '123456'
+}
 
 //      console.log(configuracaoServidor);
