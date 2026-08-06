@@ -18,3 +18,4 @@ const curso: ICurso = {
 }
 
 console.log(curso)
+
