@@ -17,13 +17,6 @@
 // mensagem('Olá, seja bem vindo!!');
 // mensagem('Tudo bem?')
 
-const soma = (n1: number, n2: number): number => {
-    
- return (n1+n2)
+// const soma = (n1: number, n2: number): number;
 
- }
-
- console.log(soma(10,50))   
-
- 
  
