@@ -19,19 +19,37 @@
 // }
 
 
-interface Calcuclos {
-    somar (n1: number, n2: number): number;
-    subtrair (n1: number, n2: number): number;
-    multiplicar (n1: number, n2: number): number;
-    dividir (n1: number, n2: number): number;
+interface ICalculos {
+    somar (num1: number, num2: number): number;
+    subtrair (num1: number, num2: number): number;
+    multiplicar (num1: number, num2: number): number;
+    dividir (num1: number, num2: number): number;
 }
 
-let calculadora: Calcuclos;
+let calculadora: ICalculos;
+
+function adicao (n1: number, n2: number) {
+    return n1+n2;
+}
+
 
     calculadora = {
-    somar: (n1: number, n2: number) => {
-        return n1+n2;
-    }
-    subtrair: (n1: number, n2: number),
-    multiplicar: (n1: number, n2: number),
-    dividir: (n1: number, n2: number),
+        
+    somar: adicao,
+       
+    subtrair: (n1: number, n2: number) => {
+        return n1-n2;
+    },
+    multiplicar: (n1: number, n2: number) => {
+        return n1*n2;
+    },
+    dividir: (n1: number, n2: number) => {
+        return n1/n2;
+    },
+}
+
+console.log(calculadora.somar(10,30))
+console.log(calculadora.subtrair(10,30))
+console.log(calculadora.multiplicar(10,30))
+console.log(calculadora.dividir(10,30))
+
