@@ -1,0 +1,1 @@
+{"version":3,"file":"classe_protected.js","sourceRoot":"","sources":["../scripts/classe_protected.ts"],"names":[],"mappings":";AAAA,MAAM,SAAS;IACX,GAAG,CAAS;IACZ,GAAG,CAAS;IACZ,MAAM,CAAS;IAEf,YAAY,GAAW,EAAE,GAAW,EAAE,MAAc;QAChD,IAAI,CAAC,GAAG,GAAG,GAAG;YACd,IAAI,CAAC,GAAG,GAAG,GAAG;YACd,IAAI,CAAC,MAAM,GAAG,MAAM,CAAA;IACxB,CAAC;IAED,cAAc;QACV,OAAO,kBAAkB,CAAC;IAC9B,CAAC;CAKA"}

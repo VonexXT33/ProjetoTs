@@ -16,4 +16,7 @@ class Professor {
         return notasTotal / notas.length;
     }
 }
+const joseA = new Professor('José Alves', 24, 'Git e GitHub');
+console.log(joseA.seApresentar());
+console.log(joseA.dizerNotas(8, 6, 7.4, 9));
 //# sourceMappingURL=classe_metodo.js.map
