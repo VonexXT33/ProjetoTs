@@ -1,1 +1,1 @@
-{"version":3,"file":"void.js","sourceRoot":"","sources":["../scripts/void.ts"],"names":[],"mappings":";AAEA,SAAS,WAAW;IAChB,OAAO,CAAC,GAAG,CAAC,uBAAuB,CAAC,CAAC;AACzC,CAAC;AAED,WAAW,EAAE,CAAC"}
+{"version":3,"file":"void.js","sourceRoot":"","sources":["../../scripts/AtividadesTS/void.ts"],"names":[],"mappings":";AAEA,SAAS,WAAW;IAChB,OAAO,CAAC,GAAG,CAAC,uBAAuB,CAAC,CAAC;AACzC,CAAC;AAED,WAAW,EAAE,CAAC"}
