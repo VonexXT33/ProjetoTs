@@ -1,4 +1,4 @@
-import funcao from '../Funcoes/funcao'
+import {mostrarMensagem} from '../Funcoes/mostrarMensagem'
     
     const mensagem = (txt?: string): void => {
     console.log(txt)
