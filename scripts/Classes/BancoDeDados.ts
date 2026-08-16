@@ -1,14 +1,7 @@
-
-//  Define o formato que o objeto deve ter
-interface IBancoDeDados {
-    ip: string;
-    usuario: string;
-    senha: string;
-    tipoDeBanco: string;
-}
+import { IBancoDeDados } from "../Interfaces/IBancoDeDados";
 
 // Como vamos trabalhar com as informacoes
-class BancoDeDados {
+export  class BancoDeDados {
     static LOCAL1 = '127.0.0.1';
     static LOCAL2 = '123.3.2.0';
     static  TIPO_MYSQL = 'MySQL';
@@ -48,33 +41,3 @@ class BancoDeDados {
 
 } 
 
-const db1 = BancoDeDados.factory({
-    tipoDeBanco: BancoDeDados.TIPO_MYSQL,
-    senha: '293882',
-    usuario: 'root',
-    ip: BancoDeDados.LOCAL1
-});
-
-const db2 = BancoDeDados.factory({
-    tipoDeBanco: BancoDeDados.TIPO_MYSQL,
-    senha: '281284',
-    usuario: 'Admin',
-    ip: BancoDeDados.LOCAL1
-})
-
-const db3 = BancoDeDados.factory({
-    tipoDeBanco: BancoDeDados.TIPO_SQLSERVER,
-    usuario: 'Developer',
-    senha: '02348734',
-    ip: BancoDeDados.LOCAL2
-})
-
-const db4 = BancoDeDados.factory({
-    tipoDeBanco: BancoDeDados.TIPO_SQLSERVER,
-    senha: '324885',
-    usuario: 'Dev',
-    ip: BancoDeDados.LOCAL2
-})
-
-
-console.log(db2);
