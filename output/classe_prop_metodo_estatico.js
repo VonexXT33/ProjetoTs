@@ -4,7 +4,8 @@ class BancoDeDados {
     usuario;
     senha;
     tipoBanco;
-    static LOCAL = '127.0.0.1';
+    static LOCAL1 = '127.0.0.1';
+    static LOCAL2 = '123.3.2.0';
     static TIPO_MYSQL = 'MySQL';
     static TIPO_SQLSERVER = 'SQL Server';
     constructor(ip, usuario, senha, tipoBanco) {
@@ -14,7 +15,7 @@ class BancoDeDados {
         this.tipoBanco = tipoBanco;
     }
     static factory(parametos) {
-        if ([
+        if (![
             BancoDeDados.TIPO_MYSQL,
             BancoDeDados.TIPO_SQLSERVER
         ].includes(parametos.tipoDeBanco)) {
@@ -23,11 +24,29 @@ class BancoDeDados {
         return new BancoDeDados(parametos.ip, parametos.usuario, parametos.senha, parametos.tipoDeBanco);
     }
 }
-const conexaoBanco = BancoDeDados.factory({
+const db1 = BancoDeDados.factory({
     tipoDeBanco: BancoDeDados.TIPO_MYSQL,
-    senha: 'root',
+    senha: '293882',
     usuario: 'root',
-    ip: BancoDeDados.LOCAL
+    ip: BancoDeDados.LOCAL1
 });
-console;
+const db2 = BancoDeDados.factory({
+    tipoDeBanco: BancoDeDados.TIPO_MYSQL,
+    senha: '281284',
+    usuario: 'Admin',
+    ip: BancoDeDados.LOCAL1
+});
+const db3 = BancoDeDados.factory({
+    tipoDeBanco: BancoDeDados.TIPO_SQLSERVER,
+    usuario: 'Developer',
+    senha: '02348734',
+    ip: BancoDeDados.LOCAL2
+});
+const db4 = BancoDeDados.factory({
+    tipoDeBanco: BancoDeDados.TIPO_SQLSERVER,
+    senha: '324885',
+    usuario: 'Dev',
+    ip: BancoDeDados.LOCAL2
+});
+console.log(db2);
 //# sourceMappingURL=classe_prop_metodo_estatico.js.map
