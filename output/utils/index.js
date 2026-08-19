@@ -8,7 +8,10 @@ function debug(classe) {
 }
 function log(constructor) {
     return class extends constructor {
-        created_at = new Date('2026-08-17');
+        constructor() {
+            super(...arguments);
+            this.created_at = new Date('2026-08-17');
+        }
     };
 }
 function decoratorMetodo(target, propertyKey, descriptor) {

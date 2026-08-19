@@ -21,7 +21,6 @@ class Movel {
     }
 }
 class Sofa {
-    nome;
     constructor(nome) {
         this.nome = nome;
     }

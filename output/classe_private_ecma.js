@@ -1,7 +1,10 @@
 "use strict";
 class Documento {
-    valor = '123123994';
-    #numero = 4;
+    constructor() {
+        this.valor = '123123994';
+        this.#numero = 4;
+    }
+    #numero;
     mostrarDocumento() {
         return this.valor;
     }

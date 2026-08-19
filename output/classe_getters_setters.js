@@ -1,7 +1,5 @@
 "use strict";
 class Permisaao {
-    _nome;
-    _nivel;
     constructor(_nome, _nivel) {
         this._nome = _nome;
         this._nivel = _nivel;

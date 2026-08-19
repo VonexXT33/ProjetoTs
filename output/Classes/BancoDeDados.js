@@ -2,14 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BancoDeDados = void 0;
 class BancoDeDados {
-    ip;
-    usuario;
-    senha;
-    tipoBanco;
-    static LOCAL1 = '127.0.0.1';
-    static LOCAL2 = '123.3.2.0';
-    static TIPO_MYSQL = 'MySQL';
-    static TIPO_SQLSERVER = 'SQL Server';
+    static { this.LOCAL1 = '127.0.0.1'; }
+    static { this.LOCAL2 = '123.3.2.0'; }
+    static { this.TIPO_MYSQL = 'MySQL'; }
+    static { this.TIPO_SQLSERVER = 'SQL Server'; }
     constructor(ip, usuario, senha, tipoBanco) {
         this.ip = ip;
         this.usuario = usuario;

@@ -1,8 +1,5 @@
 "use strict";
 class Domicilio {
-    cor;
-    endereco;
-    bairro;
     constructor(cor, endereco, bairro) {
         this.cor = cor,
             this.endereco = endereco,

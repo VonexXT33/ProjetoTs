@@ -1,6 +1,8 @@
 "use strict";
 class Banco {
-    cofreQtd = 10000;
+    constructor() {
+        this.cofreQtd = 10000;
+    }
     debitarCofre(quantidade) {
         if (this.cofreQtd >= quantidade) {
             this.cofreQtd -= quantidade;
@@ -25,7 +27,9 @@ class Banco24hrs extends Banco {
 const nubank = new Banco();
 const nubank24hrs = new Banco24hrs();
 class Banco2 {
-    caixaforte = 20000;
+    constructor() {
+        this.caixaforte = 20000;
+    }
     sacarDoCaixaforte(qntd) {
         if (this.caixaforte >= qntd) {
             this.caixaforte -= qntd;

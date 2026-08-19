@@ -1,9 +1,12 @@
 "use strict";
 class Usuario {
-    id = '128378278';
-    nome = 'José';
-    #senha = '2377123';
-    dataCadastro = new Date('2021-01-01');
+    constructor() {
+        this.id = '128378278';
+        this.nome = 'José';
+        this.#senha = '2377123';
+        this.dataCadastro = new Date('2021-01-01');
+    }
+    #senha;
     mostrarId() {
         return this.id;
     }

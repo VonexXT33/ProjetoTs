@@ -5,8 +5,6 @@ const nome = 'José';
 console.log('Olá' + nome + '. Seja bem vindo!!');
 console.log('============');
 class Produto {
-    nome;
-    valor;
     constructor(produtoNome, produtoValor) {
         this.nome = produtoNome;
         this.valor = produtoValor;

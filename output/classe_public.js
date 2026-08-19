@@ -1,8 +1,5 @@
 "use strict";
 class Veiculo {
-    modelo;
-    cor;
-    ano;
     constructor(modelo, cor, ano) {
         this.modelo = modelo;
         this.cor = cor;

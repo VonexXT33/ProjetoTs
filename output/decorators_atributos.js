@@ -8,19 +8,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const utils_1 = require("./utils");
-class TratarMensagem {
-    dizerMensagem(...mensagens) {
-        return mensagens;
+function decoratorAttr(target, nomePropriedade) {
+    const novoNome = `_${nomePropriedade}`;
+    Object.defineProperty(target, nomePropriedade, {
+        get() {
+            return this[novoNome].toUpperCase();
+        },
+        set(novoValor) {
+            this[novoNome] = novoValor;
+        }
+    });
+}
+class Animal {
+    constructor(nome) {
+        this.nome = nome;
     }
 }
 __decorate([
-    utils_1.decoratorMetodo,
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String]),
-    __metadata("design:returntype", void 0)
-], TratarMensagem.prototype, "dizerMensagem", null);
-const instancia = new TratarMensagem();
-console.log(instancia.dizerMensagem('Ola', 'Seja Bem Vindo!!', 'Qual o seu nome?'));
-//# sourceMappingURL=decorators_metodos.js.map
+    decoratorAttr,
+    __metadata("design:type", String)
+], Animal.prototype, "nome", void 0);
+const cachorro = new Animal('Medusa');
+console.log(cachorro.nome);
+//# sourceMappingURL=decorators_atributos.js.map

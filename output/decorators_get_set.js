@@ -8,20 +8,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const utils_1 = require("./utils");
-let PrimeiraClasse = class PrimeiraClasse {
-    constructor() { }
-};
-PrimeiraClasse = __decorate([
-    utils_1.debug,
+function decoratosGetSet(valor) {
+    return function (target, propertyKey, descriptor) {
+        descriptor.enumerable = valor;
+    };
+}
+class Login {
+    constructor(_usuario, _senha) {
+        this._usuario = _usuario;
+        this._senha = _senha;
+    }
+    get usuario() {
+        return this._usuario;
+    }
+    get senha() {
+        return this._senha;
+    }
+}
+__decorate([
+    decoratosGetSet(true),
+    __metadata("design:type", Object),
     __metadata("design:paramtypes", [])
-], PrimeiraClasse);
-let SegundaClasse = class SegundaClasse {
-    constructor() { }
-};
-SegundaClasse = __decorate([
-    utils_1.debug,
+], Login.prototype, "usuario", null);
+__decorate([
+    decoratosGetSet(false),
+    __metadata("design:type", Object),
     __metadata("design:paramtypes", [])
-], SegundaClasse);
-//# sourceMappingURL=decorators_classes.js.map
+], Login.prototype, "senha", null);
+const login = new Login('José Alves', '126214');
+for (let chave in login) {
+    console.log('chave', chave);
+}
+//# sourceMappingURL=decorators_get_set.js.map

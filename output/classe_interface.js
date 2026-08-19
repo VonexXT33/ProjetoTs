@@ -2,9 +2,6 @@
 class NotificacaoV2 {
 }
 class EmailV2 extends NotificacaoV2 {
-    nome;
-    email;
-    telefone;
     constructor(usuario) {
         super();
         this.nome = usuario.nome;
@@ -17,7 +14,6 @@ class EmailV2 extends NotificacaoV2 {
     }
 }
 class SMSV2 extends NotificacaoV2 {
-    numero;
     constructor(usuario) {
         super();
         this.numero = usuario.telefone;

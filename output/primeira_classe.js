@@ -1,8 +1,5 @@
 "use strict";
 class Pessoa {
-    nome;
-    idade;
-    altura;
     constructor(nome, idade, altura) {
         this.nome = nome;
         this.idade = idade;

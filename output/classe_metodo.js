@@ -1,8 +1,5 @@
 "use strict";
 class Professor {
-    nome;
-    idade;
-    materia;
     constructor(nome, idade, materia) {
         this.nome = nome;
         this.idade = idade;

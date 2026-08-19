@@ -9,12 +9,14 @@
         "sourceMap": true,
         "allowJs": true,
         "lib": ["DOM","ESNext"],
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "removeComments": true,
         //advanced options  
         "skipLibCheck": false,
         "forceConsistentCasingInFileNames": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "useDefineForClassFields": false,
+        "emitDecoratorMetadata": true
      }   
     
 }
